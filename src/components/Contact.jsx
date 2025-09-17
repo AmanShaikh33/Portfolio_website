@@ -1,16 +1,32 @@
 const Contact = () => {
   return (
-    <div>
-      <h2 className="text-xl font-semibold mb-4">Contact</h2>
-      <input
-        type="text"
-        placeholder="I want to hire Aman for a MERN project"
-        className="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none"
-      />
-      <div className="flex space-x-4 mt-4">
-        <button className="px-6 py-3 bg-red-500 rounded-xl hover:bg-red-600">Send Message</button>
-        <button className="px-6 py-3 bg-gray-800 rounded-xl hover:bg-gray-700">Schedule a Call</button>
-      </div>
+    <div className="flex justify-center gap-8 text-lg">
+      <a
+        href="https://github.com/AmanShaikh33"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-300 hover:text-gray-100 transition"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/aman-shaikh-02b241317/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:text-blue-400 transition"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="/Aman_Shaikh_Resume.pdf" // place your PDF in public folder or use a direct link
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-red-500 hover:text-red-400 transition"
+      >
+        Resume
+      </a>
     </div>
   );
 };

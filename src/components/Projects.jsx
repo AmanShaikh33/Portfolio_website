@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Projects = () => {
   const projects = [
     {
@@ -50,30 +52,20 @@ const Projects = () => {
     }
   ];
 
-  const gradients = [
-    "from-purple-500 to-pink-500",
-    "from-blue-500 to-cyan-500",
-    "from-rose-500 to-orange-500",
-    "from-teal-500 to-emerald-500",
-    "from-fuchsia-500 to-violet-500",
-    "from-amber-500 to-yellow-500",
-    "from-indigo-500 to-sky-500",
-    "from-red-500 to-pink-500"
-  ];
-
   return (
-    <div>
-      <h2 className="text-3xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-purple-600">
-        Projects
+    <section className="mt-20">
+      <h2 className="text-4xl font-extrabold mb-12 text-center bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent">
+        Featured Projects
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 px-4">
         {projects.map((p, idx) => (
-          <div
+          <motion.div
             key={idx}
-            className={`p-6 rounded-2xl shadow-xl bg-gradient-to-br ${gradients[idx % gradients.length]} transform transition duration-300 hover:scale-105 hover:shadow-2xl`}
+            whileHover={{ y: -5 }}
+            className="relative group rounded-2xl p-6 bg-gray-900/70 backdrop-blur-md border border-white/10 shadow-lg hover:shadow-fuchsia-500/20 transition"
           >
-            <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-md">
+            <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-fuchsia-400 transition">
               {p.title}
             </h3>
 
@@ -81,7 +73,7 @@ const Projects = () => {
               {p.tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="text-xs bg-black/30 text-white px-3 py-1 rounded-full backdrop-blur-sm border border-white/20"
+                  className="text-xs px-3 py-1 rounded-full bg-white/10 text-gray-200 border border-white/20"
                 >
                   {tag}
                 </span>
@@ -89,27 +81,29 @@ const Projects = () => {
             </div>
 
             <div className="flex gap-4">
+              {p.live && (
+                <a
+                  href={p.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-fuchsia-400 hover:underline"
+                >
+                  Live Demo →
+                </a>
+              )}
               <a
-                href={p.live || "#"}
-                target={p.live ? "_blank" : "_self"}
+                href={p.code}
+                target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full bg-white text-gray-800 font-semibold hover:bg-gray-100 transition"
+                className="text-sm font-medium text-gray-300 hover:underline"
               >
-                View Project
-              </a>
-              <a
-                href={p.code || "#"}
-                target={p.code ? "_blank" : "_self"}
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full bg-black/30 text-white font-semibold border border-white/30 hover:bg-black/40 transition"
-              >
-                View Code
+                Source Code
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
