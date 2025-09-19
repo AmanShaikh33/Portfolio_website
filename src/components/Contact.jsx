@@ -20,7 +20,7 @@ const Contact = () => {
       </a>
 
       <a
-        href="/Aman_Shaikh_Resume.pdf" // place your PDF in public folder or use a direct link
+        href="https://drive.google.com/file/d/14onHD8jvEpqwZ0p64_bovSsisFE8lDpu/view?usp=sharing" // place your PDF in public folder or use a direct link
         target="_blank"
         rel="noopener noreferrer"
         className="text-red-500 hover:text-red-400 transition"
