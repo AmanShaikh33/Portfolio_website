@@ -18,7 +18,7 @@ const Projects = () => {
       title: "Huddle",
       tags: ["React", "Node.js", "Tailwind", "Cloudinary", "Multer", "JWT"],
       code: "https://github.com/AmanShaikh33/mern-social",
-      live: "https://mern-social-91de.onrender.com/"
+      live: "https://huddlenew.vercel.app/"
     },
     {
       title: "Musixly",
