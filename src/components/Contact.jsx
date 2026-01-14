@@ -20,10 +20,10 @@ const Contact = () => {
       </a>
 
       <a
-        href="https://drive.google.com/file/d/1x3hIccQGdK760F-QlWb2VPjlMbP3ElYQ/view?usp=drive_link" // place your PDF in public folder or use a direct link
+        href="https://drive.google.com/file/d/1x3hIccQGdK760F-QlWb2VPjlMbP3ElYQ/view?usp=sharing" // place your PDF in public folder or use a direct link
         target="_blank"
         rel="noopener noreferrer"
-        className="text-red-500 hover:text-red-400 transition"
+        className="text-red-600 hover:text-red-400 transition"
       >
         Resume
       </a>
