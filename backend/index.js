@@ -64,13 +64,14 @@ app.post("/chat", async (req, res) => {
     const { message } = req.body;
     console.log("Message received:", message);
 
-    const response = await client.chat.completions.create({
-      model: "deepseek/deepseek-r1:free",
-      messages: [
-        { role: "system", content: SYSTEM_PROMPT },
-        { role: "user", content: message },
-      ],
-    });
+  const response = await client.chat.completions.create({
+  model: "openai/gpt-4o-mini",
+  messages: [
+    { role: "system", content: SYSTEM_PROMPT },
+    { role: "user", content: message },
+  ],
+});
+
 
     const output =
       response?.choices?.[0]?.message?.content ||
