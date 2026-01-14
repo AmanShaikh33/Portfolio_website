@@ -14,17 +14,26 @@ const Timeline = () => {
         "Focused on JavaScript, React, React Native, Node.js, and MongoDB. Built multiple full-stack projects and practical assignments.",
     },
     {
-      category: "Experience",
-      title: "Intern — Chordz Technology",
-      date: "June 2025 – Present",
-      subtitle: "React Native Developer",
-      description:
-        "Built the AstroTalk app end-to-end with React Native frontend and Node.js backend.",
-    },
+  category: "Experience",
+  title: "React & React Native Developer Intern — Chord Technology",
+  date: "Feb 2025 – Jun 2025",
+  subtitle: "React Native • Node.js",
+  description:
+    "Developed cross-platform mobile applications using React Native (Expo) and integrated backend APIs. Assisted in feature development, UI fixes, and real-time API integrations."
+},
+{
+  category: "Experience",
+  title: "Full Stack Developer — Chord Technology",
+  date: "Jul 2025 – Jan 2026",
+  subtitle: "MERN Stack",
+  description:
+    "Handled full-cycle development of MERN stack applications including frontend UI, backend APIs, authentication, and database operations. Improved performance, fixed production issues, and contributed to scalable application architecture."
+},
+
     {
       category: "Key Projects",
-      title: "Musixly • Huddle • AI Website Cloner",
-      date: "2024 – 2025",
+      title: "Musixly • Huddle • AI Website Cloner • Astrology App • Art institution App ",
+      date: "2024 – 2026",
       subtitle: "Full-Stack MERN Projects",
       description:
         "Implemented modern UI/UX, authentication and cloud integrations for multiple production-ready apps.",
